@@ -68,7 +68,7 @@ U 1 1 5BFA24C3
 P 6350 1400
 F 0 "U1" H 6150 1950 60  0000 C CNN
 F 1 "CD74HC4051E" H 6000 800 60  0000 C CNN
-F 2 "digikey-footprints:DIP-16_W7.62mm" H 6550 1600 60  0001 L CNN
+F 2 "digikey-footprints:SOIC-16_W7.5mm" H 6550 1600 60  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/cd74hc4051.pdf" H 6550 1700 60  0001 L CNN
 F 4 "296-12810-5-ND" H 6550 1800 60  0001 L CNN "Digi-Key_PN"
 F 5 "CD74HC4051E" H 6550 1900 60  0001 L CNN "MPN"
@@ -168,17 +168,6 @@ Text Label 5750 1700 2    60   ~ 0
 D3
 Text Label 5750 1600 2    60   ~ 0
 D4
-$Comp
-L power:GND #PWR020
-U 1 1 5C01B7A6
-P 5500 2100
-F 0 "#PWR020" H 5500 1850 50  0001 C CNN
-F 1 "GND" H 5500 1950 50  0000 C CNN
-F 2 "" H 5500 2100 50  0001 C CNN
-F 3 "" H 5500 2100 50  0001 C CNN
-	1    5500 2100
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR028
 U 1 1 5C01D342
@@ -753,12 +742,12 @@ ColC
 Text Label 9900 4600 2    60   ~ 0
 ColD
 $Comp
-L dk_Interface-I-O-Expanders:MCP23017-E_SP U2
+L dk_Interface-I-O-Expanders:MCP23017-E_SO U2
 U 1 1 5BFA2B29
 P 7900 1600
 F 0 "U2" H 7800 2350 60  0000 C CNN
 F 1 "MCP23017-E_SP" V 8100 900 60  0000 C CNN
-F 2 "digikey-footprints:DIP-28_W7.62mm" H 8100 1800 60  0001 L CNN
+F 2 "digikey-footprints:SOIC-28_W7.5mm" H 8100 1800 60  0001 L CNN
 F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en023709" H 8100 1900 60  0001 L CNN
 F 4 "MCP23017-E/SP-ND" H 8100 2000 60  0001 L CNN "Digi-Key_PN"
 F 5 "MCP23017-E/SP" H 8100 2100 60  0001 L CNN "MPN"
@@ -1242,8 +1231,6 @@ Wire Wire Line
 Wire Wire Line
 	7500 2700 7600 2700
 Wire Wire Line
-	6550 2100 6450 2100
-Wire Wire Line
 	8400 800  8400 1200
 Wire Wire Line
 	8400 800  8000 800 
@@ -1453,8 +1440,6 @@ Wire Wire Line
 Wire Wire Line
 	7500 2500 7600 2500
 Wire Wire Line
-	5750 1500 5500 1500
-Wire Wire Line
 	1000 3950 1000 4150
 Wire Wire Line
 	1000 3650 1000 3750
@@ -1526,8 +1511,6 @@ Wire Wire Line
 Wire Wire Line
 	4000 3200 4200 3200
 Connection ~ 4200 2900
-Wire Wire Line
-	5500 1500 5500 2100
 Wire Wire Line
 	8750 1900 8900 1900
 Wire Wire Line
@@ -2000,4 +1983,21 @@ Wire Wire Line
 Connection ~ 5600 3350
 Wire Wire Line
 	5600 3350 5800 3350
+Wire Wire Line
+	5750 1500 5500 1500
+Wire Wire Line
+	5500 1500 5500 2100
+$Comp
+L power:GND #PWR020
+U 1 1 5C01B7A6
+P 5500 2100
+F 0 "#PWR020" H 5500 1850 50  0001 C CNN
+F 1 "GND" H 5500 1950 50  0000 C CNN
+F 2 "" H 5500 2100 50  0001 C CNN
+F 3 "" H 5500 2100 50  0001 C CNN
+	1    5500 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2100 6450 2100
 $EndSCHEMATC
