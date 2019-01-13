@@ -912,52 +912,6 @@ $EndComp
 Text Label 3350 3850 0    60   ~ 0
 POT6
 $Comp
-L conn:Conn_01x03_Male J21
-U 1 1 5C021CC9
-P 3800 3850
-F 0 "J21" H 3800 4050 50  0000 C CNN
-F 1 "Control_7" H 3800 3650 50  0000 C CNN
-F 2 "Connectors_JST:JST_PH_S3B-PH-K_03x2.00mm_Angled" H 3800 3850 50  0001 C CNN
-F 3 "" H 3800 3850 50  0001 C CNN
-	1    3800 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR017
-U 1 1 5C021CCF
-P 4000 4150
-F 0 "#PWR017" H 4000 3900 50  0001 C CNN
-F 1 "GND" H 4000 4000 50  0000 C CNN
-F 2 "" H 4000 4150 50  0001 C CNN
-F 3 "" H 4000 4150 50  0001 C CNN
-	1    4000 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR016
-U 1 1 5C021CD6
-P 4000 3650
-F 0 "#PWR016" H 4000 3500 50  0001 C CNN
-F 1 "+3.3V" H 4000 3790 50  0000 C CNN
-F 2 "" H 4000 3650 50  0001 C CNN
-F 3 "" H 4000 3650 50  0001 C CNN
-	1    4000 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 5C021CDD
-P 4200 4000
-F 0 "R8" V 4280 4000 50  0000 C CNN
-F 1 "10K" V 4200 4000 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4130 4000 50  0001 C CNN
-F 3 "" H 4200 4000 50  0001 C CNN
-	1    4200 4000
-	1    0    0    -1  
-$EndComp
-Text Label 4350 3850 0    60   ~ 0
-POT7
-$Comp
 L conn:Conn_01x03_Male J1
 U 1 1 5C021E89
 P 800 2900
@@ -1141,22 +1095,20 @@ F 3 "" H 4200 3050 50  0001 C CNN
 $EndComp
 Text Label 4350 2900 0    60   ~ 0
 POT3
-Text Label 6950 1300 0    60   ~ 0
-POT0
-Text Label 6950 1400 0    60   ~ 0
-POT1
-Text Label 6950 1500 0    60   ~ 0
-POT2
 Text Label 6950 1200 0    60   ~ 0
+POT0
+Text Label 6950 1300 0    60   ~ 0
+POT1
+Text Label 6950 1400 0    60   ~ 0
+POT2
+Text Label 6950 1500 0    60   ~ 0
 POT3
 Text Label 5750 1000 2    60   ~ 0
 POT4
-Text Label 5750 1400 2    60   ~ 0
-POT5
 Text Label 5750 1100 2    60   ~ 0
-POT6
+POT5
 Text Label 5750 1300 2    60   ~ 0
-POT7
+POT6
 $Comp
 L conn:Conn_01x03_Male J23
 U 1 1 5C025AC4
@@ -1466,15 +1418,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 4150 3200 4150
 Connection ~ 3200 3850
-Wire Wire Line
-	4000 3950 4000 4150
-Wire Wire Line
-	4000 3650 4000 3750
-Wire Wire Line
-	4000 3850 4200 3850
-Wire Wire Line
-	4000 4150 4200 4150
-Connection ~ 4200 3850
 Wire Wire Line
 	1000 3000 1000 3200
 Wire Wire Line
@@ -1931,8 +1874,6 @@ Wire Wire Line
 	2200 3850 2350 3850
 Wire Wire Line
 	3200 3850 3350 3850
-Wire Wire Line
-	4200 3850 4350 3850
 Wire Wire Line
 	1200 2900 1350 2900
 Wire Wire Line
